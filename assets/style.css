@@ -1,0 +1,190 @@
+body
+{
+    --main-color : #a0cc78;
+    --main-background: #363636;
+    --main-content : #589167;
+    margin: 0!important;
+    padding: 0!important;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.navbar 
+{
+    background-color: var(--main-background)!important;
+}
+
+.navbar-nav a:hover
+{
+    color: var(--main-navbar)!important;
+}
+
+.navbar-brand
+{
+    color: var(--main-color)!important;
+    font-family: 'Dancing Script' , cursive;
+    font-size: 2em!important;
+}
+
+.jumbotron1
+{
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to left, rgba(194, 194, 194, 0.52), rgba(88, 85, 84, 0.8)),url(img/jumbotron.jpg);
+    min-height: 86vh;
+}
+
+#features .title
+{
+    font-family: 'Dancing Script',cursive;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    color: var(--main-content);
+}
+
+#features .card
+{
+    border: none!important;
+}
+
+#features .card i
+{
+    
+    color: #99d8d0;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 5em;
+    width: 1.5em;
+    height: 1.4em;
+}
+
+.card-title
+{
+    font-family: 'Dancing Script',cursive;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.best-creator
+{
+    background-color: var(--main-background);
+    color: #fff;
+}
+
+.best-creator .title
+{
+    font-family: 'Dancing Script',cursive;
+    padding-bottom: 10px;
+    color: var(--main-content);
+    border-bottom: 1px solid #fff;
+
+}
+
+.desc
+{
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+.best-creator-image
+{
+    background-size: cover;
+    min-height: 100vh;
+    background-image: url(img/best-creator.jpg);
+}
+
+/* Popular */
+
+#popular .title
+{
+    font-family: 'Dancing Script',cursive;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    color: var(--main-content);
+}
+
+.card img
+{
+    max-width: 12rem;
+    max-height: 15rem;
+}
+
+/* About */
+
+.about-left
+{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to left, rgba(194, 194, 194, 0.52), rgba(88, 85, 84, 0.8)), url(img/about.jpg) ;
+    min-height: 100vh;
+}
+
+.about-right
+{
+    background-color: var(--main-background);
+    color: #fff;
+}
+
+.about-right .title
+{
+    color: var(--main-content);
+    font-family: 'Dancing Script',cursive;
+    border-bottom: 1px solid #fff;
+}
+
+footer .title
+{
+    font-family: 'Dancing Script' ,cursive;
+}
+
+.icon i
+{
+    font-size: 2em;
+}
+
+@media (max-width:500px)
+{
+    #features .card
+    {
+        margin-left: 50px;
+    }
+
+    .jumbotron1 .display-4,.jumbotron1 .lead
+    {
+        text-align: center!important;
+    }
+
+    .custom-button
+    {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+@media (max-width:375px)
+{
+    #features .card
+    {
+        margin-left: 25px;
+    }
+
+    .jumbotron1 .display-4
+    {
+        font-size: 3em;
+    }
+
+}
+
+@media (max-width:320px)
+{
+    #features .card
+    {
+        margin-left: 5px;
+    }
+}
